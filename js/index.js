@@ -15,24 +15,43 @@ redButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "red"
+  remove();
+  color("red");
 });
 
 blueButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "blue"
+  remove();
+  color("blue");
 });
 
 greenButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "green"
+  remove();
+  color("green");
 });
 
 grayButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
   // - then add the class name: "gray"
+  remove();
+  color("gray");
 });
 
 // Write your two functions below:
+//ich finds absolut affig, dass ich alle classes hargecoded removen muss!
+function remove() {
+  box.classList.remove("gray");
+  box.classList.remove("blue");
+  box.classList.remove("green");
+  box.classList.remove("red");
+}
+
+function color(color) {
+  box.classList.add(color);
+}
